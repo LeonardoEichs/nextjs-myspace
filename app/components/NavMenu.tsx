@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import { SignInButton, SignOutButton } from "./buttons";
+
 
 const links = [
   { 
@@ -28,6 +30,9 @@ export default function NavMenu() {
             <Link href={href}>{text}</Link>
           </li>
         )}
+        <li className="flex items-center px-4">
+          <SignInButton />
+        </li>
       </ul>
     </nav>
   )

@@ -26,7 +26,7 @@ export default function NavMenu() {
       </Link>
       <ul className="list-none flex mr-4">
         {links.map(({ text, href }) => 
-          <li className="h-[70px] flex items-center p-1">
+          <li key={href} className="h-[70px] flex items-center p-1">
             <Link href={href}>{text}</Link>
           </li>
         )}

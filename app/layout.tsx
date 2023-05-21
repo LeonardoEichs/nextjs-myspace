@@ -1,4 +1,4 @@
-import NavMenu from './components/NavMenu'
+import NavMenu from '../components/NavMenu'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import AuthProvider from './AuthProvider'
